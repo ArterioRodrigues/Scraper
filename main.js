@@ -5,22 +5,25 @@ var express = require('express');
 
 var app = express()
 
-function checkLinks(data){  
+async function checkLinks(data){  
 
     return new Promise ((res, req) => {
-            re = true
+            
             request(data, function(error, response) {
-                
+                re = true
+                data_tran = []
                 try{
                     if(error || response.statusCode > 400){
                         re = false
                     }
+                    data_tran = [re, response.statusCode]
                 }
                 catch(err){
                     re = false;  
+                    data_tran = [re, "None"]
                 }
 
-                res(re)
+                res(data_tran)
             });
            
             
@@ -86,22 +89,29 @@ function getPage(search){
 async function start(){
     counter = 0;
     search = "https://www.hunter.cuny.edu/studentservices/cds/students/CareerLinks";
-    let response = await getPage("https://www.google.com");
+    let response = await getPage("https://en.wikipedia.org/wiki/Hilter");
+
     console.log("#of links \t", response.length)
+    
 
+    Promise.all(response.map(foo => checkLinks(foo)
+        .then((results) => {
+            if(!results[0]){
+                counter += 1;
+                console.log(counter, '\t',results[1], "\t URL:", foo)
+            }
+        })
+    ))
 
-    for(let item = 0;  item < response.length; item++){
-        data = await checkLinks(response[item])
-        if(!data){
-            counter++;
-            console.log(item, '\t', counter, '\t', "URL:  ", response[item])
-        }
-    }
+        
+    
 }
 
+start()
 
-app.get('/', function (req, res) {
-    console.log(start())
-})
 
-app.listen(3000)
+// app.get('/', function (req, res) {
+//     console.log(start())
+// })
+
+// app.listen(3000)
