@@ -423,3 +423,149 @@ for(let i = 0; i < data.length; i++){
 
 // const PORT = process.env.PORT || 3001;
 // app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
+http://hunter-cuny-csm.symplicity.com/students
+http://hunter-cuny-csm.symplicity.com/employers
+http://www.careeronestop.org
+http://www.bls.gov/oco
+http://www.cvtips.com/
+http://www.artcurators.org/
+http://www.marketingjobs.com/
+http://nyfa.org
+http://www.isaagny.org/index.aspx
+http://insideschools.org/
+http://www.mathforamerica.org/web/guest/home
+http://www.nycteachingfellows.org/
+http://schools.nyc.gov/teachnyc/
+http://studentaffairs.com/
+http://www.allhealthcarejobs.com/
+http://www.health.ny.gov/professionals/ems/educ.htm
+http://www.medopportunities.com/
+http://nypta.associationcareernetwork.com/Common/HomePage.aspx
+http://www.careers-in-business.com/
+http://www.legalstaff.com/
+http://www.newyorklawjournal.com/careers.jsp
+http://home.nyc.gov/
+http://www.statelocalgov.net/
+http://www.americorps.gov/Default.asp
+http://www.makingthedifference.org/index.shtml
+http://www.rcjobs.com/
+http://www.commerce.gov/
+http://www.dhs.gov/
+http://www.epa.gov/
+http://eoffice.nonprofitstaffing.com/jobboard/search/
+http://www.publicservicecareers.org/
+http://www.un.org/en/employment/
+http://www.aiha.org/Pages/default.aspx
+http://www.aiha.org/Content/CES/CES.htm
+http://www.gridleydigitalny.com/
+http://www.nycseed.com/
+http://www.topresearchjobs.com/
+http://greencareerguide.jobthread.com/
+http://www.naaee.org/
+http://www.business-disability.com/
+http://www.latinosforhire.com/
+http://www.nshmba.org/
+http://www.dol.gov/vets/ahaw/
+http://www.vetjobs.com/
+http://www.webgrrls.com/
+http://www.womensforum.com/
+http://www.aicpa.org/Pages/Default.aspx
+http://www.aswa.org/
+http://www.internationalinsuranceprofessionals.org/
+http://www.nyssa.org/
+http://www.amanet.org/
+http://www.iaap-hq.org/
+http://www.nehra.com/
+http://www.recruitersnetwork.com/index.htm
+http://www.marketingpower.com/
+http://www.eatright.org/
+http://www.aha.org/aha_app/index.jsp
+http://www.gnyha.org/1/Default.aspx
+http://www.nypta.org/
+http://www.setac.org/
+http://www.naccp.org/
+http://www.cencom.org/
+http://http//www.iatse-intl.org/
+http://www.irts.org/
+http://www.nabj.org/
+http://www.acjs.org/
+http://www.marketingpower.com/
+http://www.actorsequity.org/home.asp
+https://www.nyhistory.org/web/
+http://aaupnet.org/membership/directory.html
+http://awpwriter.org/aboutawp/index.htm
+http://aapr-wapr.org/
+http://www.mhaofnyc.org/
+
+http://www.cvtips.com/
+http://www.artcurators.org/
+http://nyfa.org/
+http://www.isaagny.org/index.aspx
+http://insideschools.org/
+http://studentaffairs.com/
+http://www.allhealthcarejobs.com/
+http://nypta.associationcareernetwork.com/Common/HomePage.aspx
+http://www.medopportunities.com/
+ http://www.legalstaff.com/
+ http://www.statelocalgov.net/
+ http://www.americorps.gov/Default.asp
+ http://www.rcjobs.com/
+ http://www.dhs.gov/
+ http://eoffice.nonprofitstaffing.com/jobboard/search/
+ http://www.publicservicecareers.org/
+ http://www.latinosforhire.com/
+ http://www.topresearchjobs.com/
+ http://greencareerguide.jobthread.com/
+ http://www.nshmba.org/
+ http://www.vetjobs.com/
+ http://www.webgrrls.com/
+ http://www.aicpa.org/Pages/Default.aspx
+ http://www.aswa.org/
+ http://www.womensforum.com/
+ http://www.internationalinsuranceprofessionals.org/
+ http://www.amanet.org/
+ http://www.nehra.com/
+ http://www.marketingpower.com/
+ http://www.iaap-hq.org/
+ http://www.gnyha.org/1/Default.aspx
+ http://www.nypta.org/
+ http://www.setac.org/
+ http://www.naccp.org/
+ http://http//www.iatse-intl.org/
+ http://www.cencom.org/
+ http://www.irts.org/
+ http://www.nabj.org/
+ http://www.marketingpower.com/
+ http://www.acjs.org/
+ http://aaupnet.org/membership/directory.html
+ http://aapr-wapr.org/
+ http://www.bls.gov/oco
+ http://www.careeronestop.org/
+ http://www.mathforamerica.org/web/guest/home
+ http://www.marketingjobs.com/
+ http://www.nycteachingfellows.org/
+ http://www.health.ny.gov/professionals/ems/educ.htm
+ http://www.commerce.gov/
+ http://www.epa.gov/
+ http://www.careers-in-business.com/
+ http://www.un.org/en/employment/
+ http://www.aiha.org/Content/CES/CES.htm
+ http://www.aiha.org/Pages/default.aspx
+ http://www.newyorklawjournal.com/careers.jsp
+ http://www.naaee.org/
+ http://www.mhaofnyc.org/
+ http://www.gridleydigitalny.com/
+ http://www.aha.org/aha_app/index.jsp
+ http://www.dol.gov/vets/ahaw/
+ http://www.actorsequity.org/home.asp
+ http://awpwriter.org/aboutawp/index.htm
+ http://schools.nyc.gov/teachnyc/
+ https://www.nyhistory.org/web/
+ http://www.eatright.org/
+ http://www.makingthedifference.org/index.shtml
+ http://home.nyc.gov/
+ http://www.nycseed.com/
+ http://www.business-disability.com/
+ http://www.nyssa.org/
+ http://www.recruitersnetwork.com/index.htm
