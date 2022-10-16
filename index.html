@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Bronken URL Finder</title>
 </head>
 <body>
-    <button onclick="start()">Start</button>
+
+    <div id = "Home">
+        <div class = "data">
+            <div class = "Title">
+                LINK CHECKER
+            </div>
+            
+            <input id = "URL" type="text" class = "Input" placeholder="URL: " >
+            <input type="submit" value="Submit" class = "Submit" onClick="start()">
+
+            <table id = "grid">
+
+            </table>
+        </div>
+
+        
+    </div>
+    
+        
+
+
+    <script src = "./node_modules/axios/dist/axios.js"> </script>
     <script src= "main.js"></script>
 </body>
 </html>

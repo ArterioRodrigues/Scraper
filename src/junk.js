@@ -114,3 +114,29 @@ const myAsyncLoopFunction = async (array) => {
 
     return data1;
 }
+
+async function start(){
+    counter = 0;
+    search = "https://www.hunter.cuny.edu/studentservices/cds/students/CareerLinks";
+
+    let response = await getPage(search);
+
+    console.log("# of links \t", response.length);
+    
+    data = [];
+    await data.push(
+        Promise.all(response.map(foo => checkLinks(foo)
+                    .then((results) => {
+                        data=[]
+                        if(!results[0]){
+                            counter += 1;
+                            console.log(counter, '\t',results[1], "\t URL:", foo)
+                        }
+                        return foo;
+                    })
+    )))
+    .then(console.log(data));
+
+    return data 
+   
+}

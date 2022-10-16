@@ -1,0 +1,83 @@
+* {
+    font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth ;
+}
+
+.Title {
+
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 6vw;
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+    
+}
+
+#Home {
+    height: 100%;
+    width: 100vw;
+}
+
+.data{
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    padding: 100px 0;
+}
+
+
+.Input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black; /* Green */
+    font-size: 16px;
+    font-weight: bold;
+    width: 70%;
+    outline: none;
+}
+
+.Submit {
+    padding: 10px 25px;
+    border: 2px solid #000;
+    font-weight: bold;
+
+    background: transparent;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+
+    transition: 0.5s;
+    float: right;
+  }  
+
+.Submit:hover {
+    color: white;
+    background-color: black;
+}
+
+.grid {
+    padding-top: 100px;
+}
+
+tr{
+    margin-top: 10px;
+}
+
+table {
+    margin-top: 30px;
+}
+
+td {
+    border: solid 1px black;
+    padding: 10px;
+    width: 60vw;;
+}
+
