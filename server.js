@@ -6,11 +6,17 @@ const bodyParser = require('body-parser');
 
 var app = express()
 
+var options = {
+    url:  'http://url',
+    timeout: 60000
+}
+
 async function checkLinks(data){  
 
     return new Promise ((res, req) => {
-            
-            request(data, function(error, response) {
+            options.url = data;
+
+            request(options, function(error, response) {
                 re = true
                 data_tran = []
                 try{
@@ -97,14 +103,14 @@ async function start(URL){
 
     await Promise.all(response.map(foo => checkLinks(foo)
         .then((results) => {
-
+            counter += 1;
             if(!(results[0])){
-                counter += 0;
+                
                 data.push(foo);
-                console.log("Bad Link")
+                console.log(counter, "\t", results[1], "Bad Link:", foo)
             }
             else {
-                console.log("Good Link")
+                console.log(counter, "\t", results[1], "Good Link:", foo)
             }
         })
     ))
@@ -128,7 +134,10 @@ app.use(bodyParser.json())
 app.post('/', async (req, res) => {
     console.log( req.body.URL)
     await start(req.body.URL)
-    .then(data=> res.send(data))
+    .then(data=> {
+        console.log("URLS Found")
+        res.send(data)})
+    .then(console.log("POST SENT TO REQUESTER"))
 })
 
 app.listen(3001)

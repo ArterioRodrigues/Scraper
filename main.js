@@ -17,23 +17,26 @@ var numRows = 0;
 var numCols = 0;
 
 function addR(data) {
+    removeR()
+
     grid = document.getElementById("grid");
     table_r = document.createElement("TR");
-    table_d = document.createElement("TD");
-
-    table_r.className = "row";
-    table_d.className = "content";
-    table_d.innerHTML = data;
-
-    console.log(data)
-
-
-    removeR()
     
 
-    table_r.appendChild(table_d)
-    grid.appendChild(table_r) 
-    numRows++;
+    for(let i = 0; i < data.length; i++){
+        table_r = document.createElement("TR");
+        table_d = document.createElement("TD");
+        table_d.className = "content";
+        table_r.className = "row";
+        table_d.innerHTML = data[i];
+        table_r.appendChild(table_d)
+        console.log(data[i])
+        numRows++;
+        grid.appendChild(table_r) 
+    }
+
+    
+    
 }
 
 function removeR() {
