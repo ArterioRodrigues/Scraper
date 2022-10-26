@@ -3,7 +3,7 @@
 async function start(){
 
     let url = document.getElementById("URL").value
-    await axios.post(`http://127.0.0.1:3001`, {
+    await axios.post(`https://scraper-backend.onrender.com`, {
         URL: url
     })
     .then(res => {
