@@ -3,11 +3,12 @@
 async function start(){
 
     let url = document.getElementById("URL").value
-    await axios.post(`https://scraper-backend.onrender.com/`, {
+    await axios.post(`http://127.0.0.1:3001`, {
         URL: url
     })
     .then(res => {
         addR(res.data)
+        download_txt(res.data);
     })
    
         
@@ -49,3 +50,15 @@ function removeR() {
         }
     }
 }
+
+function download_txt(data) {
+
+    var hiddenElement = document.createElement('a');
+  
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(data);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'BrokenLinks.txt';
+    hiddenElement.click();
+  }
+  
+  
